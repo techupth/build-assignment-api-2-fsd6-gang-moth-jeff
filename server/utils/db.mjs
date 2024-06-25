@@ -1,10 +1,11 @@
 // Create PostgreSQL Connection Pool here !
 import * as pg from "pg";
 const { Pool } = pg.default;
+import 'dotenv/config';
 
 const connectionPool = new Pool({
   connectionString:
-    "postgresql://your-db-username:your-db-password@localhost:5432/your-db-name",
+    "postgresql://postgres:Skytab09@localhost:5432/Creating Data API Assignment",
 });
 
 export default connectionPool;
